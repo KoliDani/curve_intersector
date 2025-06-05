@@ -2,7 +2,7 @@ package intersector;
 import java.util.*;
 
 
-public class Bezier extends Line {
+public class Bezier extends Segment {
     private final ArrayList<Point> controls = new ArrayList<>();
     private static final double TOL = 0.00001;
 

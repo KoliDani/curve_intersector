@@ -4,7 +4,7 @@ import java.awt.geom.Arc2D;
 import java.awt.geom.Rectangle2D;
 import java.util.*;
 
-public class Arc extends Line {
+public class Arc extends Segment {
     private Point center = null;
 
     public Arc(Point s, Point e, Point c) {

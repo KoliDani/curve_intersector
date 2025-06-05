@@ -3,23 +3,10 @@ import java.awt.*;
 import java.awt.geom.Line2D;
 import java.util.*;
 
-public class Line extends Util {
-    Point s = null;
-    Point e = null;
+public class Line extends Segment {
 
-    protected Line(Point s, Point e) {
-        this.s = s;
-        this.e = e;
-    }
-
-    public static Line create(Point s, Point e) {
-        return new Line(s,e);
-    }
-    public static Arc create(Point s, Point e, Point center) {
-        return new Arc(s,e,center);
-    }
-    public static Spline create(Point s, Point e, Collection<Point> controls) {
-        return new Spline(s,e,controls);
+    public Line(Point s, Point e) {
+        super(s,e);
     }
 
     public boolean isIntersect(Line other) {

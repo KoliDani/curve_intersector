@@ -2,7 +2,7 @@ package intersector;
 import java.util.*;
 
 
-public class Spline extends Line {
+public class Spline extends Segment {
 
     /**
      * BSpline is a set of bezier curves
